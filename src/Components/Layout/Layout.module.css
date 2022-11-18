@@ -1,0 +1,175 @@
+.layoutWrap {
+    background: #0E1014;
+    margin: 0 auto;
+    width: 1440px;
+    position: relative;
+    z-index: -1;
+    height: 58px;
+}
+
+.purpleBall {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 868px;
+    top: -2px;
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.redBall {
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 519px;
+    top: 83px;
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.smallRedBall {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 851px;
+    top: 547px;
+    border-radius: 50%;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+.purpleLight {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    left: 602px;
+    top: -154px;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.redLight {
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    left: -102px;
+    top: 251px;
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.glass {
+    visibility: hidden;
+}
+
+.noise {
+    visibility: hidden;
+}
+
+
+
+
+@media screen and (max-device-width: 320px) {
+
+    .layoutWrap {
+        max-width: 320px;
+    }
+
+    .purpleLight {
+        width: 259px;
+        height: 259px;
+        left: 258px;
+        top: 162px;
+        background: #833AB4;
+        opacity: 0.5;
+        filter: blur(196px);
+        overflow: hidden;
+    }
+
+    .redLight {
+        width: 211px;
+        height: 210px;
+        left: -55px;
+        top: 296px;
+        background: #961A1A;
+        opacity: 0.4;
+        filter: blur(196px);
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .yellowLight {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: -66px;
+        top: 519px;
+        top: 574px;
+        background: #FCB045;
+        opacity: 0.4;
+        filter: blur(196px);
+        overflow: hidden;
+    }
+
+    .noise {
+        visibility: visible;
+        position: absolute;
+        width: 320px;
+        height: 445px;
+        left: 0px;
+        top: 55px;
+        background: url('./../../assets/images/noise.png');
+        mix-blend-mode: overlay;
+        z-index: 1;
+    }
+
+    .glass {
+        visibility: visible;
+        position: absolute;
+        width: 320px;
+        height: 445px;
+        left: 0px;
+        top: 55px;
+        background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+        backdrop-filter: blur(7.5px);
+    }
+
+    .redBall {
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 402px;
+        top: 457px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(2px);
+        filter: blur(8px);
+        backdrop-filter: blur(2px);
+    }
+    .smallRedBall {
+        left: 278px;
+        top: 563px;
+    }
+
+    .purpleBall {
+        width: 40px;
+        height: 40px;
+        left: 296px;
+        top: 236px;
+        top: 291px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(6px);
+        backdrop-filter: blur(2px);
+        overflow: hidden;
+    }
+}
