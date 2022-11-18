@@ -9,9 +9,10 @@ import whatsapp from './../../assets/images/header/socialIcons/whatsapp.svg';
 
 export const Header = () => {
 
-
     return <section className={c.headWrapper}>
+        
         <div className={c.logoWrap}>
+
             <div className={c.logo}>
                 <img alt='' src={logo1} />
                 <img alt='' src={logo2} />
@@ -39,7 +40,6 @@ export const Header = () => {
             <img alt='' src={telegram} />
             <img alt='' src={viber} />
             <img alt='' src={whatsapp} />
-
         </div>
 
     </section>

@@ -4,6 +4,7 @@ import c from './Main.module.css';
 export const Main = () => {
 
     return <section className={c.flexWrap}>
+
         <div className={c.leftWrap}>
             <h1>
                 Зарабатывайте <br />больше <br /><span className={c.gradient}>с WELBEX</span>
@@ -14,6 +15,7 @@ export const Main = () => {
         </div>
 
         <div className={c.rightWrap}>
+
             <div className={c.rightWrapHeader}>
                 Вместе с <span className={c.rightWrapGradient}>бесплатной{/* <br /> */} консультацией</span> мы дарим:
             </div>
@@ -42,7 +44,9 @@ export const Main = () => {
                         <p>использования<br />CRM</p>
                     </div>
                 </div>
+
             </div>
+
             <div className={c.mobileBenefits}>
                 <p>Skype Аудит</p>
                 <p>30 виджетов</p>
@@ -57,5 +61,6 @@ export const Main = () => {
             </div>
 
         </div>
+        
     </section>
 }
